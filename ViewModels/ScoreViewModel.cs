@@ -5,18 +5,20 @@ public partial class ScoreViewModel : BaseViewModel
 	int count = 0;
 
 	[ObservableProperty]
-	public string message = "Click me";
+	public string cancleBtn = "Cancle";
+
+	[ObservableProperty]
+	public string restartBtn = "Restart Game";
 
 	[RelayCommand]
-	private void OnCounterClicked()
+	private async Task RestartGame() 
 	{
-		count++;
+		await Shell.Current.GoToAsync("///GamePage");
+	}
 
-		if (count == 1)
-			Message = $"Clicked {count} time";
-		else
-			Message = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(Message);
+	[RelayCommand]
+	private async Task Cancled()
+	{
+		await Shell.Current.GoToAsync("///GameScorePage");
 	}
 }

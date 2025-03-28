@@ -5,10 +5,33 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:local="clr-namespace:TheQuizzyApp"
 	xmlns:views="clr-namespace:TheQuizzyApp.Views">
-	<ShellContent
+	
+    <ShellContent
 		Title="Main"
 		ContentTemplate="{DataTemplate views:PlayerSelectionPage}"
 		Route="MainPage"
 		Shell.NavBarIsVisible="False" />
+
+
+    <ShellContent
+        Title="Player Selection"
+        ContentTemplate="{DataTemplate views:PlayerSelectionPage}"
+        Route="PlayerSelectionPage"/>
+    
+
+    <ShellContent
+        Title="Game Page"
+        ContentTemplate="{DataTemplate views:GamePage}"
+        Route="GamePage"/>
+
+    <ShellContent 
+        Title="Round Score"
+        ContentTemplate="{DataTemplate views:ScorePage}"
+        Route="ScorePage"/>
+
+    <ShellContent 
+        Title="Game Score"
+        ContentTemplate="{DataTemplate views:GameScorePage}"
+        Route="GameScorePage"/>
 
 </Shell>

@@ -5,6 +5,33 @@
 			 x:Class="TheQuizzyApp.Views.MainPage"
 			 x:DataType="vm:MainViewModel">
 
-    <Label Text="Hello" TextColor="Black"></Label>
-    
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="400"></RowDefinition>
+            <RowDefinition Height="1"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        
+        
+        <Image Source="app_icon.png" Grid.Row="1" Grid.Column="1"/>
+        
+        <Button Text="{Binding BtnStartText}" 
+                Grid.Row="3" 
+                Grid.Column="1"
+                Command ="{Binding StartGameCommand}"/>
+        
+        <Button Text="{Binding BtnHowToText}" Grid.Row="5" Grid.Column="1"/>
+
+        
+    </Grid> 
+
 </ContentPage>

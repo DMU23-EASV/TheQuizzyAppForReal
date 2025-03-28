@@ -5,36 +5,142 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:vm="clr-namespace:TheQuizzyApp.ViewModels"
 	x:DataType="vm:CategoryViewModel">
+    
 
-	<ScrollView>
-		<VerticalStackLayout
-			Padding="30,0"
-			Spacing="25"
-			VerticalOptions="Center">
+    <ScrollView Padding="20">
+       
+        <VerticalStackLayout Spacing="20">
+        
+            <Label Text="Vælg en kategori" FontSize="Title" HorizontalOptions="Center" FontAttributes="Bold" Padding="20"/>
 
-			<Image
-				Aspect="AspectFit"
-				HeightRequest="185"
-				SemanticProperties.Description="dot net bot in a race car number eight"
-				Source="dotnet_bot.png" />
+            <Grid>
+                
+                <Button></Button>
 
-			<Label
-				SemanticProperties.HeadingLevel="Level1"
-				Style="{StaticResource Headline}"
-				Text="Hello, World!" />
+                <Grid Padding="10">
+                    
+                    <Label Text="Biler og Bajer" 
+                       FontAttributes="Bold" 
+                       FontSize="Large" 
+                       TextColor="White" 
+                       HorizontalOptions="Center"
+                       Grid.Column="0"/>
 
-			<Label
-				SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-				SemanticProperties.HeadingLevel="Level2"
-				Style="{StaticResource SubHeadline}"
-				Text="Welcome to &#10;.NET Multi-platform App UI" />
+                </Grid>
 
-			<Button
-				Command="{Binding CounterClickedCommand}"
-				HorizontalOptions="Fill"
-				SemanticProperties.Hint="Counts the number of times you click"
-				Text="{Binding Message}" />
+                <Grid>
+                    <Button BackgroundColor="Transparent"
+                            HorizontalOptions="End"
+                            VerticalOptions="Start"
+                            FontFamily="MaterialSymbol"
+                            Text="favorite_border"
+                            FontSize="25" 
+                            Margin="10">
+                    </Button>
+                
+                </Grid>
+                
+                <Image Source="dotnet_bot.png" Aspect="AspectFit"></Image>
+            
+            </Grid>
 
-		</VerticalStackLayout>
-	</ScrollView>
+            <Grid>
+
+                <Button></Button>
+
+                <Grid Padding="10">
+
+                    <Label Text="Geografi og Giraffer" 
+            FontAttributes="Bold" 
+            FontSize="Large" 
+            TextColor="White" 
+            HorizontalOptions="Center"
+            Grid.Column="0"/>
+
+                </Grid>
+
+                <Grid>
+                    <Button BackgroundColor="Transparent"
+                 HorizontalOptions="End"
+                 VerticalOptions="Start"
+                 FontFamily="MaterialSymbol"
+                 Text="favorite_border"
+                 FontSize="25" 
+                 Margin="10">
+                    </Button>
+
+                </Grid>
+
+                <Image Source="dotnet_bot.png" Aspect="AspectFit"></Image>
+
+            </Grid>
+
+            <Grid>
+
+                <Button></Button>
+
+                <Grid Padding="10">
+
+                    <Label Text="Programering og Pauser" 
+            FontAttributes="Bold" 
+            FontSize="Large" 
+            TextColor="White" 
+            HorizontalOptions="Center"
+            Grid.Column="0"/>
+
+                </Grid>
+
+                <Grid>
+                    <Button BackgroundColor="Transparent"
+                 HorizontalOptions="End"
+                 VerticalOptions="Start"
+                 FontFamily="MaterialSymbol"
+                 Text="favorite_border"
+                 FontSize="25" 
+                 Margin="10">
+                    </Button>
+
+                </Grid>
+
+                <Image Source="dotnet_bot.png" Aspect="AspectFit"></Image>
+
+            </Grid>
+
+            <Grid>
+
+                <Button></Button>
+
+                <Grid Padding="10">
+
+                    <Label Text="Lande og Landgangsbrød" 
+            FontAttributes="Bold" 
+            FontSize="Large" 
+            TextColor="White" 
+            HorizontalOptions="Center"
+            Grid.Column="0"/>
+
+                </Grid>
+
+                <Grid>
+                    <Button BackgroundColor="Transparent"
+                         HorizontalOptions="End"
+                         VerticalOptions="Start"
+                         FontFamily="MaterialSymbol"
+                         Text="favorite_border"
+                         FontSize="25" 
+                         Margin="10">
+                    </Button>
+
+                </Grid>
+
+                <Image Source="dotnet_bot.png" Aspect="AspectFit"></Image>
+
+            </Grid>
+
+
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
 </ContentPage>
