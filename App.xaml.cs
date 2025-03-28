@@ -6,6 +6,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new CategoryPage(new CategoryViewModel());
+		MainPage = new AppShell();
 	}
 }
