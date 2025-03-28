@@ -7,34 +7,52 @@
 	x:DataType="vm:PlayerSelectionViewModel">
 
 	<ScrollView>
-		<VerticalStackLayout
-			Padding="30,0"
-			Spacing="25"
-			VerticalOptions="Center">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="70"></RowDefinition>
+            </Grid.RowDefinitions>
 
-			<Image
-				Aspect="AspectFit"
-				HeightRequest="185"
-				SemanticProperties.Description="dot net bot in a race car number eight"
-				Source="dotnet_bot.png" />
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Label Text="Tilføj Spiller" 
+                   FontSize="Title"
+                   Style="{StaticResource SubHeadline}"
+                   Grid.Row="1"/>
 
-			<Label
-				SemanticProperties.HeadingLevel="Level1"
-				Style="{StaticResource Headline}"
-				Text="Hello, World!" />
+            <HorizontalStackLayout HorizontalOptions="Center"
+                                   Grid.Row="2">
 
-			<Label
-				SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-				SemanticProperties.HeadingLevel="Level2"
-				Style="{StaticResource SubHeadline}"
-				Text="Welcome to &#10;.NET Multi-platform App UI" />
+                <Entry x:Name="PlayerEntry" 
+                       Placeholder="Spiller navn" 
+                       WidthRequest="250"/>
+                <Button BackgroundColor="Red" ></Button>
+            </HorizontalStackLayout>
 
-			<Button
-				Command="{Binding CounterClickedCommand}"
-				HorizontalOptions="Fill"
-				SemanticProperties.Hint="Counts the number of times you click"
-				Text="{Binding Message}" />
+            <Button BackgroundColor="Green"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontFamily="MaterialSymbol"
+                    Text="person_add_border"
+                    FontSize="25" 
+					WidthRequest="55"
+                    Grid.Row="3"
+                    />
 
-		</VerticalStackLayout>
+            <Button Text="Start" 
+                    FontSize="Large"
+                    WidthRequest="200"
+                    HeightRequest="50"
+                    Grid.Row="5">
+                
+            </Button>
+
+        </Grid>
 	</ScrollView>
 </ContentPage>
