@@ -18,4 +18,20 @@
         ContentTemplate="{DataTemplate views:PlayerSelectionPage}"
         Route="PlayerSelectionPage"/>
     
+
+    <ShellContent
+        Title="Game Page"
+        ContentTemplate="{DataTemplate views:GamePage}"
+        Route="GamePage"/>
+
+    <ShellContent 
+        Title="Round Score"
+        ContentTemplate="{DataTemplate views:ScorePage}"
+        Route="ScorePage"/>
+
+    <ShellContent 
+        Title="Game Score"
+        ContentTemplate="{DataTemplate views:GameScorePage}"
+        Route="GameScorePage"/>
+
 </Shell>
