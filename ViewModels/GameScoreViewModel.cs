@@ -8,15 +8,8 @@ public partial class GameScoreViewModel : BaseViewModel
 	public string message = "Click me";
 
 	[RelayCommand]
-	private void OnCounterClicked()
+	private async Task NavigateHome()
 	{
-		count++;
-
-		if (count == 1)
-			Message = $"Clicked {count} time";
-		else
-			Message = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(Message);
+		await Shell.Current.GoToAsync("///MainPage");
 	}
 }
