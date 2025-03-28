@@ -6,35 +6,75 @@
 	xmlns:vm="clr-namespace:TheQuizzyApp.ViewModels"
 	x:DataType="vm:GameScoreViewModel">
 
-	<ScrollView>
-		<VerticalStackLayout
-			Padding="30,0"
-			Spacing="25"
-			VerticalOptions="Center">
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
 
-			<Image
-				Aspect="AspectFit"
-				HeightRequest="185"
-				SemanticProperties.Description="dot net bot in a race car number eight"
-				Source="dotnet_bot.png" />
+            <VerticalStackLayout HorizontalOptions="Center">
 
-			<Label
-				SemanticProperties.HeadingLevel="Level1"
-				Style="{StaticResource Headline}"
-				Text="Hello, World!" />
+                <Label Text="The winner takes it all" 
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center" 
+                       Padding="20"/>
 
-			<Label
-				SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-				SemanticProperties.HeadingLevel="Level2"
-				Style="{StaticResource SubHeadline}"
-				Text="Welcome to &#10;.NET Multi-platform App UI" />
+                <Grid HorizontalOptions="Center" ColumnSpacing="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
 
-			<Button
-				Command="{Binding CounterClickedCommand}"
-				HorizontalOptions="Fill"
-				SemanticProperties.Hint="Counts the number of times you click"
-				Text="{Binding Message}" />
+                    <Label Grid.Column="0" Text="Peter" FontSize="Large" VerticalOptions="Center"/>
+                    <Button Grid.Column="1" Text="3"/>
+                </Grid>
 
-		</VerticalStackLayout>
-	</ScrollView>
+                <Grid HorizontalOptions="Center" ColumnSpacing="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="0" Text="Peter" FontSize="Large" VerticalOptions="Center"/>
+                    <Button Grid.Column="1" Text="3"/>
+                </Grid>
+                <Grid HorizontalOptions="Center" ColumnSpacing="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="0" Text="Peter" FontSize="Large" VerticalOptions="Center"/>
+                    <Button Grid.Column="1" Text="3"/>
+                </Grid>
+                <Grid HorizontalOptions="Center" ColumnSpacing="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="0" Text="Peter" FontSize="Large" VerticalOptions="Center"/>
+                    <Button Grid.Column="1" Text="3"/>
+                </Grid>
+                <Grid HorizontalOptions="Center" ColumnSpacing="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="0" Text="Peter" FontSize="Large" VerticalOptions="Center"/>
+                    <Button Grid.Column="1" Text="3"/>
+                </Grid>
+
+            </VerticalStackLayout>
+
+            <Button Text="Hjem" Grid.Row="1" Command="{Binding NavigateHomeCommand}"></Button>
+
+        </Grid>
+
+
+
+    </ScrollView>
 </ContentPage>
