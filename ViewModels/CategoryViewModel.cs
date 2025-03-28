@@ -17,6 +17,12 @@ public partial class CategoryViewModel : BaseViewModel
         categories.Add(new Category("Science: Mathematics", "science_maths.png", false));
     }
 
+    [RelayCommand]
+    private async Task SelectedCategory()
+    {
+        await Shell.Current.GoToAsync("///GamePage");
+    }
+
     public ICommand SelectCategoryCommand { get; }
     public ICommand ToggleFavoriteCommand { get; }
 

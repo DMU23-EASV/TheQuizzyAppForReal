@@ -14,8 +14,8 @@
             <Label Text="Vælg en kategori" FontSize="Title" HorizontalOptions="Center" FontAttributes="Bold" Padding="20"/>
 
             <Grid>
-                
-                <Button></Button>
+
+                <Button Command="{Binding SelectedCategoryCommand}"></Button>
 
                 <Grid Padding="10">
                     
@@ -24,7 +24,8 @@
                        FontSize="Large" 
                        TextColor="White" 
                        HorizontalOptions="Center"
-                       Grid.Column="0"/>
+                       Grid.Column="0"
+                    />
 
                 </Grid>
 

@@ -16,7 +16,12 @@
         Title="Player Selection"
         ContentTemplate="{DataTemplate views:PlayerSelectionPage}"
         Route="PlayerSelectionPage"/>
-    
+
+    <ShellContent
+        Title="Category Page"
+        ContentTemplate="{DataTemplate views:CategoryPage}"
+        Route="CategoryPage"/>
+
     <ShellContent
         Title="Game Page"
         ContentTemplate="{DataTemplate views:GamePage}"
