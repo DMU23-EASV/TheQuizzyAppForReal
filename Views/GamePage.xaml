@@ -8,39 +8,39 @@
 
     <Grid>
         <Grid.RowDefinitions>
-        <RowDefinition Height="Auto"></RowDefinition>
-        <RowDefinition Height="Auto"></RowDefinition>
-        <RowDefinition Height="Auto"></RowDefinition>
-        <RowDefinition Height="Auto"></RowDefinition>
-        <RowDefinition Height="*"></RowDefinition>
-        <RowDefinition Height="70"></RowDefinition>
-    </Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+        </Grid.RowDefinitions>
 
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*"/>
-    </Grid.ColumnDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-    <Label Text="Spiller" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" Grid.Row="0"/>
-    <Label Text="Mads" HorizontalOptions="Center" Grid.Row="1"/>
+        <Label Text="Spiller" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" Grid.Row="0"/>
+        <Label Text="Mads" HorizontalOptions="Center" Grid.Row="1"/>
 
-    <Grid Grid.Row="2">
-        <Image Source="button.png"></Image>
-        <Button
+        <Grid Grid.Row="2">
+            <Image Source="button.png"></Image>
+            <Button
             Text="Kamilla"
             TextTransform="Uppercase"
             FontSize="Title"
             ContentLayout="Right, 20"
             BackgroundColor="Transparent"
-            Command ="{Binding RoundDoneCommand}"
             />
-    </Grid>
+        </Grid>
 
 
-    <Label Text="Spørgsmål" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"
+        <Label Text="Spørgsmål" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"
            Grid.Row="3"/>
-    <Label Text="Nævn byer med S" HorizontalOptions="Center" FontSize="Large" Grid.Row="4"/>
+        <Label Text="Nævn byer med S" HorizontalOptions="Center" FontSize="Large" Grid.Row="4"/>
 
-    <Button Text="FORKERT!" FontSize="Body" Grid.Row="5" />
+
+        <Button Text="FORKERT!" Command ="{Binding RoundDoneCommand}" FontSize="Body" Grid.Row="5"  />
 
     </Grid>
 </ContentPage>

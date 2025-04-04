@@ -68,9 +68,11 @@
                     <Button Grid.Column="1" Text="3"/>
                 </Grid>
 
+                <Button Margin="5" Text="Nyt Spørgsmål" Command="{Binding NewQuestionCommand}" ></Button>
+
             </VerticalStackLayout>
 
-            <Button Text="Hjem" Grid.Row="1" Command="{Binding NavigateHomeCommand}"></Button>
+            <Button Text="Slut Spil" Grid.Row="1" Command="{Binding EndGameCommand}"></Button>
 
         </Grid>
 

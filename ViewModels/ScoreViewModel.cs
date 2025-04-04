@@ -5,7 +5,7 @@ public partial class ScoreViewModel : BaseViewModel
 	int count = 0;
 
 	[ObservableProperty]
-	public string cancleBtn = "Cancle";
+	public string cancelBtn = "Cancel";
 
 	[ObservableProperty]
 	public string restartBtn = "Restart Game";
@@ -17,7 +17,7 @@ public partial class ScoreViewModel : BaseViewModel
 	}
 
 	[RelayCommand]
-	private async Task Cancled()
+	private async Task Cancel()
 	{
 		await Shell.Current.GoToAsync("///GameScorePage");
 	}

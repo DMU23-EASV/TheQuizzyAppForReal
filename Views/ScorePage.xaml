@@ -31,10 +31,10 @@
                 Text="{Binding RestartBtn}"/>
 
             <Button
-				Command="{Binding CancledCommand}"
+				Command="{Binding CancelCommand}"
 				HorizontalOptions="Fill"
-				SemanticProperties.Hint="Cancle"
-				Text="{Binding CancleBtn}" />
+				SemanticProperties.Hint="Cancel"
+				Text="{Binding CancelBtn}" />
             
             
 

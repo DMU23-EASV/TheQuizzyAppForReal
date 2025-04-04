@@ -12,4 +12,5 @@ public partial class GameViewModel : BaseViewModel
     {
         await Shell.Current.GoToAsync("///GameScorePage");
     }
+
 }
